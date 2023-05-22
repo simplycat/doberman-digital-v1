@@ -8,7 +8,7 @@
 <p>Digital design for equestrian sport brands.</p>
 
 <ul>
-  <li>We bring passion to projects</li>
+  <li>We bring in-depth industry knowledge to your digital presence</li>
   <li>For equestrians, by equestrians</li>
-  <li>Digital expertise</li>
+  <li>Technical, hands-on marketing that helps you grow your online business</li>
 </ul>
