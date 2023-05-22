@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Allen Digital`,
-    description: `Allen Digital is a digital marketing and advertising agency that takes a privacy-first approach to SEM, SEO and web development projects that scale.`,
-    author: `@allendigitalinc`,
-    siteUrl: `https://allendigital.agency`,
+    title: `Doberman Digital`,
+    description: `Doberman Digital is a digital marketing and advertising agency that takes a privacy-first approach to SEM, SEO and web development projects that scale.`,
+    author: `@dobermndigital`,
+    siteUrl: `https://dobermandigital.com`,
     menuLinks: [
       {
         name: "about",
@@ -18,10 +18,6 @@ module.exports = {
         link: "/work",
       },
       {
-        name: "blog",
-        link: "/blog",
-      },
-      {
         name: "contact",
         link: "/contact",
       },
@@ -30,6 +26,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-next-seo`,
