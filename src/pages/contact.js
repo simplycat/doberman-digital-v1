@@ -2,89 +2,73 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TwitterIcon from "../images/twitter.svg"
 
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <div className="container-fluid">
       <section className="py-5">
-        <h2 className="mb-5 text-center">Contact Doberman Digital</h2>
         <div className="container-fluid">
-          <div className="col-md-8 mx-auto">
-            <form
-              method="POST"
-              netlify-honeypot="bot-field"
-              data-netlify="true"
-              data-netlify-recaptcha="false"
-              name="contact"
-              action="thankyou"
-            >
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="d-flex flex-column flex-md-row">
-                <div className="form-group form-row">
-                  <p>
-                    <label for="input1-contacts-05">
-                      Your Name:
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        className="form-control mb-3 mr-5"
-                      />
-                    </label>
-                  </p>
-                </div>
-                <div className="form-group form-row">
-                  <p>
-                    <label className="mb-3 mr-5">
-                      Your Email:
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        className="form-control mb-3 mr-5"
-                      />
-                    </label>
-                  </p>
-                </div>
-              </div>
-              <div className="form-group">
-                <p>
-                  <label for="services">Service of Interest</label>
-                  <select class="form-control" id="services">
-                    <option value="digital strategy">Digital Strategy</option>
-                    <option value="content creation">Content Creation</option>
-                    <option value="web consulting">Web Consulting</option>
-                    <option value="digital experiences">Digital Experiences</option>
-                    <option value="other">Other</option>
-                  </select>
-                </p>
-              </div>
-              <div className="form-group form-row">
-                <p>
-                  <label>
-                    Message
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows="5"
-                      className="form-control mb-3"
-                    />
-                  </label>
-                </p>
-              </div>
-              <div data-netlify-recaptcha="true"></div>
-              <button
-                type="submit"
-                className="btn btn-primary px-5 d-block mx-auto"
-              >
-                Submit
-              </button>
-            </form>
+        <h2 className="mb-5">Contact Doberman Digital</h2>
+          <form 
+          name="contact" 
+          method="POST" 
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          data-netlify-recaptcha="false"
+          action="thankyou"
+          >
+          <div className="form-group col-7">
+            <label for="first-name">
+            First Name 
+            </label>
+            <input type="text" 
+            className="form-control" 
+            id="first-name" 
+            placeholder="First Name" required>
+            </input>
           </div>
-          {/* <div className="col-12 mt-4">
+          <div className="form-group col-7">
+            <label for="last-name">
+            Last Name 
+            </label>
+            <input type="text" 
+            className="form-control" 
+            id="last-name" 
+            placeholder="Last Name" required>
+            </input>
+          </div>
+          <div class="form-group col-7">
+            <label for="service">Service of Interest</label>
+              <select class="form-control" 
+              id="service">
+                <option>Digital strategy</option>
+                <option>Content creation</option>
+                <option>Web consulting</option>
+                <option>Advertising opportunities</option>
+                <option>Other</option>
+              </select>
+            </div>
+          <div class="form-group col-7">
+                <label for="email">Your Email</label>
+                <input type="email" 
+                class="form-control" 
+                id="email" 
+                placeholder="name@example.com" required>
+                </input>
+            </div>
+            <div class="form-group col-7">
+                <label for="Message">Message (optional)</label>
+                <textarea class="form-control" 
+                id="message" 
+                rows="5">
+                </textarea>
+            </div>
+            <div class="form-group col-7">
+              <button type="submit" class="btn btn-primary align-center">Submit</button>
+            </div>
+        </form>
+          <div className="col-12 mt-4">
             <p>
             Twitter: {" "}
               <a href="https://twitter.com/dobermndigital">
@@ -97,7 +81,7 @@ const ContactPage = () => (
                 Doberman Digital, Inc.
               </a>
             </p>
-          </div> */}
+          </div>
         </div>
       </section>
     </div>
